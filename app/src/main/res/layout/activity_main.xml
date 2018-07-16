@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_millionaire"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/ic_logo" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/gradient"
+            android:paddingEnd="48dp"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:paddingStart="48dp"
+            android:text="Chơi game"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/gradient"
+            android:paddingEnd="48dp"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:paddingStart="48dp"
+            android:text="Điểm cao"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/gradient"
+            android:paddingEnd="48dp"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:paddingStart="48dp"
+            android:text="Hướng dẫn"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <com.linroid.filtermenu.library.FilterMenuLayout
+        android:id="@+id/filter_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        app:fm_centerBottom="30dp"
+        app:fm_centerRight="30dp"
+        app:fm_collapsedRadius="24dp"
+        app:fm_expandedRadius="96dp"
+        app:fm_primaryColor="#ff5791aa"
+        app:fm_primaryDarkColor="#ff334862" />
+
+</FrameLayout>
