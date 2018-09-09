@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Millionaire</string>
+    <string name="app_name">Ai là triệu phú</string>
+    <string name="play_game">Chơi game</string>
+    <string name="high_score">Điểm cao</string>
+    <string name="guide">Hướng dẫn</string>
+    <string name="dummy_1">Từ nào sau đây dùng để chỉ màu sắc?</string>
 </resources>
