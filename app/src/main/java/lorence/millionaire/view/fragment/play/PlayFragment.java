@@ -24,6 +24,18 @@ public class PlayFragment extends BaseFragment implements PlayView {
     @BindView(R.id.animationQuestion)
     LottieAnimationView mAnimationQuestion;
 
+    @BindView(R.id.animationAnswerA)
+    LottieAnimationView animationAnswerA;
+
+    @BindView(R.id.animationAnswerB)
+    LottieAnimationView animationAnswerB;
+
+    @BindView(R.id.animationAnswerC)
+    LottieAnimationView animationAnswerC;
+
+    @BindView(R.id.animationAnswerD)
+    LottieAnimationView animationAnswerD;
+
     @BindView(R.id.tvQuestion)
     TextView tvQuestion;
 
@@ -53,8 +65,26 @@ public class PlayFragment extends BaseFragment implements PlayView {
 
     @Override
     public void initComponents() {
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
         mAnimationQuestion.setAnimation("question.json");
         mAnimationQuestion.playAnimation();
+
+        animationAnswerA.setAnimation("answer.json");
+        animationAnswerA.playAnimation();
+
+        animationAnswerB.setAnimation("answer.json");
+        animationAnswerB.playAnimation();
+
+        animationAnswerC.setAnimation("answer.json");
+        animationAnswerC.playAnimation();
+
+        animationAnswerD.setAnimation("answer.json");
+        animationAnswerD.playAnimation();
+
         new Handler().postDelayed(loadQuestionMillionaire(), TIME_DELAY_QUESTION);
     }
 
